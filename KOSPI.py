@@ -11,6 +11,9 @@ import numpy as np
 st.markdown("""
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
     <style>
+    .block-container {
+        padding-top: 0.5rem !important;
+    }
     html, body, [class*="css"]  {
         font-family: 'Nanum Gothic', 'NanumGothic', 'Malgun Gothic', Arial, sans-serif !important;
     }
@@ -19,7 +22,7 @@ st.markdown("""
 
 # 2. 대제목
 st.markdown(
-    "<span style='font-size:18pt; font-weight:bold; color:#3399FF;'>◎ 종목검색</span>",
+    "<span style='font-size:18pt; font-weight:bold; color:#3399FF;'>KOSPI 종목검색</span>",
     unsafe_allow_html=True
 )
 
