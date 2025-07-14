@@ -297,7 +297,7 @@ if 'result' in st.session_state and 'df_price' in st.session_state and 'df_1y' i
             zeroline=False,
             title=None
         )
-        st.plotly_chart(fig, use_container_width=True,config={"displayModeBar": False})
+        st.plotly_chart(fig, use_container_width=True,config={"displayModeBar": False,"staticPlot": True})
 
         st.subheader("년간 변동추이")
         df_1y['월'] = df_1y['날짜'].str[:7]
@@ -412,4 +412,4 @@ if 'result' in st.session_state and 'df_price' in st.session_state and 'df_1y' i
             zeroline=False,
             title=None
         )
-        st.plotly_chart(fig1y, use_container_width=True,config={"displayModeBar": False})
+        st.plotly_chart(fig1y, use_container_width=True,config={"displayModeBar": False,"staticPlot": True})
