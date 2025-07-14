@@ -22,7 +22,7 @@ st.markdown("""
 
 # 2. 대제목
 st.markdown(
-    "<span style='font-size:18pt; font-weight:bold; color:#3399FF;'>KOSPI 종목검색</span>",
+    "<span style='font-size:18pt; font-weight:bold; color:#3399FF;'>KOSPI Stock Searching</span>",
     unsafe_allow_html=True
 )
 
