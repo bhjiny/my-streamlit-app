@@ -24,7 +24,7 @@ st.markdown(
 )
 
 # 3. 엑셀 데이터 로딩
-EXCEL_PATH = r'D:\Py\kospi.xlsx'
+EXCEL_PATH = 'kospi.xlsx'
 if not os.path.exists(EXCEL_PATH):
     st.error(f"엑셀 파일이 존재하지 않습니다: {EXCEL_PATH}")
     st.stop()
