@@ -67,6 +67,9 @@ if selected_name:
     with col2:
         end_date = st.date_input("종료 날짜", default_end, key="end")
 
+    if start_date > end_date:
+        st.error("시작날짜가 종료날짜보다 느릴수 없습니다.")
+
     # 검색단위
     timeframe_options = ["Day", "Week", "Month"]
     timeframe = st.radio(
