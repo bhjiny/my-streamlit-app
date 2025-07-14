@@ -319,7 +319,7 @@ if 'result' in st.session_state and 'df_price' in st.session_state and 'df_1y' i
             hoverinfo='skip',
             showlegend=False
         ))
-        oc_line_width_1y = 7.5
+        oc_line_width_1y = 4.5
         for i in range(len(df_1y)):
             rowp = df_1y.iloc[i]
             try:
