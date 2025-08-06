@@ -35,10 +35,7 @@ if '종목명' not in df.columns:
 
 # 2. 대제목
 st.markdown(
-    "
-
-
-    "
+    "<br><br><br><br><br><br>"
     "<span style='font-size:18pt; font-weight:bold; color:#3399FF;'>KOSPI Stock Searching</span>",
     unsafe_allow_html=True
 )
