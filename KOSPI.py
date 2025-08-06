@@ -20,11 +20,7 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# 2. 대제목
-st.markdown(
-    "<span style='font-size:18pt; font-weight:bold; color:#3399FF;'>\n\n\n\n\n\nKOSPI Stock Searching</span>",
-    # unsafe_allow_html=True
-)
+
 
 # 3. 엑셀 데이터 로딩
 EXCEL_PATH = 'kospi.xlsx'
@@ -37,7 +33,11 @@ if '종목명' not in df.columns:
     st.error("'종목명' 컬럼이 엑셀 파일에 없습니다.")
     st.stop()
 
-
+# 2. 대제목
+st.markdown(
+    "<span style='font-size:18pt; font-weight:bold; color:#3399FF;'>\n\n\n\n\n\nKOSPI Stock Searching</span>",
+    unsafe_allow_html=True
+)
 
 # 4. 종목 선택 (초기값 없음, placeholder)
 stock_names = df['종목명'].dropna().unique().tolist()
